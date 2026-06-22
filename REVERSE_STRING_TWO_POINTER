@@ -1,0 +1,11 @@
+N="sathwik"
+String_Array=[]
+for i in N:
+    String_Array.append(i)
+left=0
+right=len(String_Array)-1
+while left<right:
+    String_Array[left],String_Array[right]=String_Array[right],String_Array[left]
+    left=left+1
+    right=right-1
+print("".join(String_Array))
