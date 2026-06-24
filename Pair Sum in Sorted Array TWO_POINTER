@@ -1,0 +1,15 @@
+N=list(map(int,input().split()))
+Target=int(input())
+count1=0
+left=0
+right=len(N)-1
+while left<right:
+    if N[left]+N[right]==Target:
+        count1=count1+1
+        left=left+1
+        right=right-1
+    elif N[left]+N[right]>Target:
+        right=right-1
+    else:
+        left=left+1
+print(count1)
