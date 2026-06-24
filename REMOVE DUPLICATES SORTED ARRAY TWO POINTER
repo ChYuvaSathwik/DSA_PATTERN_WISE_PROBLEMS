@@ -1,0 +1,13 @@
+S=[1,1,2,2,3]
+M=[]
+left=0
+M.append(S[left])
+while left<len(S)-1:
+    if S[left]!=S[left+1]:
+        M.append(S[left+1])
+        left=left+1
+    else:
+        left=left+1
+print(M)
+
+
